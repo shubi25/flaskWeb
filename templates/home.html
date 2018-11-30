@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fuel Management</title>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <img scr="{{ url_for('static', filename='nahcon.jpeg') }}"/>
+  <div class="main">
+  	
+    <p class="sign" align="center">Login</p>
+    <form class="form1" method="POST">
+    <input class="un " type="text" name="u" align="center" placeholder="Username" required="required">
+    <input class="pass" type="password" name="p" align="center" placeholder="Password" required="required">
+    <button class="submit" type="submit" align="center"class="btn btn-primary btn-block btn-large">Login</button>    
+  </div>
+</body>
+</html>
