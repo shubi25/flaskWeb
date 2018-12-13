@@ -2,17 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-	<h1>Vehicle</h1>
-	<form method="POST">
-		VehicleType <input type="text" name="VehicleType" />
-		<br/>
-		plate number <input type="text" name="plateNum" />
-		<br/>
-		Max Capacity <input type="number" name="Maxcap" />
-		<br/>
-		<button type="submit" class="btn btn-primary btn-block btn-large">Add</button>
-	<form/>
+	<div class="main">
+		<p class="sign" align="center">Vehicle Details</p>
+		<form class="form1" method="POST">
+			<input class="un" type="text" name="VehicleType" align="center" placeholder="Vehicle Type">
+	    	<input class="pass" type="text" name="plateNum" align="center" placeholder="Vehicle Plate Number">
+	    	<input class="pass" type="number" name="Maxcap" align="center" placeholder="Max Capacity">
+	    	<button class="submit" type="submit" align="center"class="btn btn-primary btn-block btn-large">Add</button>
+		<form/>
+	</div>
 </body>
 </html>

@@ -2,17 +2,18 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-	<h1>Driver</h1>
-	<form method="POST">
-		name <input type="text" name="name" />
-		<br/>
-		designation <input type="text" name="designation" />
-		<br/>
-		idNum <input type="number" name="idNum" />
-		<br/>
-		<button type="submit" class="btn btn-primary btn-block btn-large">Add</button>
-	<form/>
+	<div class="main">
+		<p class="sign" align="center">Driver Details</p>
+		<form class="form1" method="POST">
+			<input class="un" type="text" name="name" align="center" placeholder="Driver Name">
+	    	<input class="pass" type="text" name="designation" align="center" placeholder="Designation">
+	    	<input class="pass" type="number" name="idNum" align="center" placeholder="ID Number">
+	    	<button class="submit" type="submit" align="center"class="btn btn-primary btn-block btn-large">Add</button>
+		<form/>
+	</div>
 </body>
 </html>
+
